@@ -2,6 +2,7 @@
 :root {
     --white-color: #fdfeff;
     --grey-color: #eeeeec;
+    --pink-color: #e12583;
 }
 
 * {
@@ -27,7 +28,62 @@ a {
 }
 
 .space-between {
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 /* end rules */
+
+.page {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+}
+
+.page .card-container {
+    background-color: var(--white-color);
+    width: 30%;
+    padding: 15px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.page .card-container .card .icons .icon:first-child {
+    margin-right: auto;
+}
+
+.page .card-container .card .icons .icon:last-child {
+    margin-left: 10px;
+}
+
+.page .card-container .card .image div {
+    width: 45%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.page .card-container .card .image div img {
+    max-width: 100%;
+}
+
 
