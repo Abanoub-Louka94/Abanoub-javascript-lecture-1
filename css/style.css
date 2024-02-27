@@ -90,10 +90,14 @@ span {
     margin-bottom: 20px;
 }
 
-.page .card-container .card .image div {
+.page .card-container .card .image .image-container {
+    position: relative;
     max-width: 150px;
-    overflow: hidden;
     margin: 0 auto;
+}
+
+.page .card-container .card .image .image-container img {
+    max-width: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -101,8 +105,18 @@ span {
     -o-border-radius: 50%;
 }
 
-.page .card-container .card .image div img {
-    max-width: 100%;
+.page .card-container .card .image i {
+    position: absolute;
+    right: 10px;
+    background-color: var(--pink-color);
+    color: white;
+    bottom: 18px;
+    padding: 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .page .card-container .card .text h3 {
@@ -172,14 +186,15 @@ span {
     margin-top: 20px;
 }
 
-.page .card-container .card .stats div span:first-of-type {
+.page .card-container .card .stats .stat .numbers {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.page .card-container .card .stats div span:last-of-type {
+.page .card-container .card .stats .stat .followers {
     font-size: 14px;
+    opacity: 0.7;
 }
 
 
