@@ -17,6 +17,11 @@ ul {
 
 a {
     text-decoration: none;
+    color: unset;
+}
+
+span {
+    display: block;
 }
 
 .d-flex {
@@ -31,9 +36,17 @@ a {
     justify-content: space-between;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 .center-content {
     justify-content: center;
     align-items: center;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .text-capitalize {
@@ -54,7 +67,9 @@ a {
 
 .page .card-container {
     background-color: var(--white-color);
-    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 400px;
     padding: 15px;
     border-radius: 13px;
     -webkit-border-radius: 13px;
@@ -71,8 +86,12 @@ a {
     margin-left: 10px;
 }
 
+.page .card-container .card .image {
+    margin-bottom: 20px;
+}
+
 .page .card-container .card .image div {
-    width: 45%;
+    max-width: 150px;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 50%;
@@ -85,5 +104,87 @@ a {
 .page .card-container .card .image div img {
     max-width: 100%;
 }
+
+.page .card-container .card .text h3 {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.page .card-container .card .text span {
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.page .card-container .card .button {
+    margin: 26px auto 30px;
+}
+
+.page .card-container .card .button a {
+    background-color: var(--pink-color);
+    padding: 15px 40px;
+    color: var(--white-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.page .card-container .card .social {
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page .card-container .card .social ul {
+    justify-content: space-around;
+}
+
+.page .card-container .card .social ul li a {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.page .card-container .card .social ul li:first-child a {
+    background-color: var(--pink-color);
+}
+
+.page .card-container .card .social ul li:nth-child(2) a {
+    background-color: #1769ff;
+}
+
+.page .card-container .card .social ul li:last-child a {
+    background-color: #1da1f2;
+}
+
+.page .card-container .card .social ul li i {
+    color: var(--white-color);
+}
+
+.page .card-container .card .stats {
+    margin-top: 20px;
+}
+
+.page .card-container .card .stats div span:first-of-type {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.page .card-container .card .stats div span:last-of-type {
+    font-size: 14px;
+}
+
+
+
+
+
 
 
